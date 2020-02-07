@@ -12,7 +12,7 @@ router.get('/test', (req, res, next) => {
   let response = [];
 
   const client = new Client({
-    connectionString: 'postgres://tcmspxhwoqamol:9ae24aeff9ca740767e9998fae0de1b1cc7f8ce58ccfbe3231d362031844170e@ec2-52-203-160-194.compute-1.amazonaws.com:5432/de07o47i7qidt1',
+    connectionString: process.env.PG_DATABASE_URL,
     ssl: true,
   });
 
