@@ -31,6 +31,7 @@ router.get('/test', (req, res, next) => {
 
     res.json({
       test: 'test',
+      page: 'test page under index.js',
       rows: response,
     });
 
