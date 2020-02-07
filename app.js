@@ -6,8 +6,6 @@ var logger = require('morgan');
 
 require('dotenv').config();
 
-console.log('process.env', process.env.PG_DATABASE_URL);
-
 var indexRouter = require('./routes');
 var usersRouter = require('./routes/users');
 
